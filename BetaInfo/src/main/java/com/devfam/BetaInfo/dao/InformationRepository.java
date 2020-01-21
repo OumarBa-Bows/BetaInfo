@@ -14,7 +14,6 @@ public interface InformationRepository extends JpaRepository<Information, Intege
 		@Query("select i from Information i where i.libele like :x")
 		List<Information> listerParMotCle(@Param("x")String mc);
 		
-		@Qu
 		void updateInformation(Information inf);
 		
 }
